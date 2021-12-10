@@ -1,6 +1,6 @@
 {
   "name": "github-action-b4a-deploy",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rimonhanna/github-action-b4a-deploy.git"
