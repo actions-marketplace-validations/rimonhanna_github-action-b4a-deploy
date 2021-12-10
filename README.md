@@ -14,14 +14,14 @@ Make sure you use the `actions/checkout@v2` action!
 **tag-prefix:** Prefix that is used for the git tag  (optional). Example:
 ```yaml
 - name:  'Automated Github Action Version Bump'
-  uses:  'rimonhanna/github-action-b4a-deploy@master'
+  uses:  'rimonhanna/github-action-b4a-deploy@main'
   with:
     tag-prefix:  ''
 ```
 **PACKAGEJSON_DIR:** Param to parse the location of the desired package.json (optional). Example:
 ```yaml
 - name:  'Automated Github Action Version Bump'
-  uses:  'rimonhanna/github-action-b4a-deploy@master'
+  uses:  'rimonhanna/github-action-b4a-deploy@main'
   env:
     PACKAGEJSON_DIR:  'frontend'
 ```
