@@ -1,18 +1,19 @@
 const { Toolkit } = require('actions-toolkit')
-const action = require('./action.js')
+const core = require('@actions/core')
 
 describe('tests', () => {
-
-
-  beforeEach(() => {})
-
-  afterEach(() => {})
-
   
 
   it('logs successfully', async () => {
-    let actionRun = new action({B4A_API_KEY:"zozo"})
+    jest.spyOn(core, 'getInput').mockImplementation((name, options) => {
+        switch(name) {
+            case 'B4A_API_KEY': return 'test';
+        }
+
+        return '';
+    }); 
+    const action = require('./action.js')
     
-    expect(actionRun).toHaveBeenCalled()
+    expect(action).toHaveBeenCalled()
   })
 })
