@@ -14,18 +14,18 @@ Toolkit.run(async tools => {
 
 
   try {
-    let output = execSync('mkdir -p ~/.back4app').toString()
-    tools.log.info(output)
-    output = execSync(`echo -e "machine parsecli.back4app.com\n  login default\n  password ${b4aApiKey}" > ~/.back4app/netrc`).toString()
-    tools.log.info(output)
-    output = execSync('cat ~/.back4app/netrc').toString()
-    tools.log.info(output)
+    execSync('mkdir -p ~/.back4app').toString()
+    execSync(`echo -e "machine parsecli.back4app.com\n  login default\n  password ${b4aApiKey}" > ~/.back4app/netrc`).toString()
+
+    let output = execSync('cat ~/.back4app/netrc').toString()
+    tools.log.debug(output)
+    
     output = execSync('curl https://raw.githubusercontent.com/back4app/parse-cli/back4app/installer.sh | /bin/bash').toString()
-    tools.log.info(output)
+    tools.log.debug(output)
 
     if(appName && appName.length > 0) {
       output = execSync(`b4a default "${appName}"`).toString()
-      tools.log.info(output)
+      tools.log.debug(output)
     }
 
     output = execSync('b4a deploy').toString().trim()
