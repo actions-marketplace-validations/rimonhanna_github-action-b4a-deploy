@@ -15,7 +15,7 @@ Toolkit.run(async tools => {
 
   try {
     execSync('mkdir -p ~/.back4app').toString()
-    execSync(`echo -e "machine parsecli.back4app.com\n  login default\n  password ${b4aApiKey}" > ~/.back4app/netrc`).toString()
+    execSync(`echo "machine parsecli.back4app.com\n  login default\n  password ${b4aApiKey}" > ~/.back4app/netrc`).toString()
 
     let output = execSync('cat ~/.back4app/netrc').toString()
     tools.log.info(output)
