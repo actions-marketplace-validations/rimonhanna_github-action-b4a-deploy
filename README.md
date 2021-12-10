@@ -11,17 +11,18 @@ you'll need to configured that workflow yourself. You can look to the
 Make sure you use the `actions/checkout@v2` action!
 
 ### Usage:
-**tag-prefix:** Prefix that is used for the git tag  (optional). Example:
+**B4A_API_KEY:** Back4App api key  (required). Example:
 ```yaml
 - name:  'Automated Github Action Version Bump'
   uses:  'rimonhanna/github-action-b4a-deploy@main'
   with:
-    tag-prefix:  ''
+    B4A_API_KEY:  ''
 ```
-**PACKAGEJSON_DIR:** Param to parse the location of the desired package.json (optional). Example:
+**PACKAGEJSON_DIR:** Name of the app you're deploying to, deploys to your default app if left empty (optional). Example:
 ```yaml
 - name:  'Automated Github Action Version Bump'
   uses:  'rimonhanna/github-action-b4a-deploy@main'
   env:
-    PACKAGEJSON_DIR:  'frontend'
+    B4A_API_KEY:  ''
+    APP_NAME:  'your_app_name'
 ```
