@@ -1,0 +1,20 @@
+name: Automated Back4App deploy
+description: Automated deployment to Back4App parse app
+runs:
+  using: 'node14'
+  main: 'action.js'
+branding:
+  icon: chevron-up
+  color: blue
+inputs:
+  B4A_API_KEY:
+    description: 'Back4App api key'
+    default: ''
+    required: true
+  APP_NAME:
+    description: 'Name of the app to deploy to, deploys to default if left empty'
+    default: ''
+    required: false
+outputs:
+  response:
+    description: 'Results of the depoyment'

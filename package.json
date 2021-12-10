@@ -1,0 +1,29 @@
+{
+  "name": "github-action-b4a-deploy",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rimonhanna/github-action-b4a-deploy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rimonhanna/github-action-b4a-deploy/issues"
+  },
+  "homepage": "https://github.com/rimonhanna/github-action-b4a-deploy#readme",
+  "private": true,
+  "main": "action.js",
+  "scripts": {
+    "start": "node ./action.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "actions-toolkit": "^2.2.0"
+  },
+  "devDependencies": {
+    "jest": "^25.5.4",
+    "standard": "^14.3.4"
+  }
+}
