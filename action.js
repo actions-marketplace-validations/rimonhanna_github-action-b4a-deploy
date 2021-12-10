@@ -14,11 +14,11 @@ Toolkit.run(async tools => {
 
 
   try {
-    execSync('curl https://raw.githubusercontent.com/back4app/parse-cli/back4app/installer.sh | /bin/bash')
-    execSync('echo "..........................."')
     execSync('mkdir -p ~/.back4app')
     execSync(`echo -e "machine parsecli.back4app.com\n  login default\n  password ${b4aApiKey}" > ~/.back4app/netrc`)
     execSync('cat ~/.back4app/netrc')
+    execSync('echo "..........................."')
+    execSync('curl https://raw.githubusercontent.com/back4app/parse-cli/back4app/installer.sh | /bin/bash')
 
     if(appName && appName.length > 0) {
       execSync(`b4a default "${appName}"`)
