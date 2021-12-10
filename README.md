@@ -18,7 +18,7 @@ Make sure you use the `actions/checkout@v2` action!
   with:
     B4A_API_KEY:  ''
 ```
-**PACKAGEJSON_DIR:** Name of the app you're deploying to, deploys to your default app if left empty (optional). Example:
+**APP_NAME:** Name of the app you're deploying to, deploys to your default app if left empty (optional). Example:
 ```yaml
 - name:  'Automated Github Action Version Bump'
   uses:  'rimonhanna/github-action-b4a-deploy@main'
