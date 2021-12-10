@@ -1,7 +1,7 @@
 name: Automated Back4App deploy
 description: Automated deployment to Back4App parse app
 runs:
-  using: 'node14'
+  using: 'node16'
   main: 'action.js'
 branding:
   icon: chevron-up
