@@ -1,4 +1,4 @@
-## github-action-b4a-deploy
+## Automated Back4App B4a deployment
 
 GitHub Action for automated b4a "Back4App" deploy.
 
