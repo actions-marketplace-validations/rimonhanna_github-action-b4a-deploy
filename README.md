@@ -3,8 +3,7 @@
 GitHub Action for automated b4a "Back4App" deploy.
 
 It is meant to be used on every successful merge to main but 
-you'll need to configured that workflow yourself. You can look to the
-[`.github/workflows/push.yml`](./.github/workflows/push.yml) file in this project as an example.
+you'll need to configured that workflow yourself.
 
 **Attention**
 
